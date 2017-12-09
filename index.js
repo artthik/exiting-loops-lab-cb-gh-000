@@ -1,4 +1,19 @@
 function breakOut(array, changeValue, stopValue){
+  for(let a = 0; a > array.length; a++){
+    if(array[a] === stopValue){
+      break;
+    }
+    array[a] = changeValue;
+  }
+  return array;
+}
+
+function keepGoing(array, changeValue, skipValue){
+
+}
+
+
+function breakOut(array, changeValue, stopValue){
   for (var i = 0; i < array.length; i++) {
 
     if (array[i] == stopValue ) {
@@ -26,4 +41,3 @@ function findBy(array, findFn) {
   }
 return null;
 
-}
