@@ -9,20 +9,20 @@ function breakOut(array, changeValue, stopValue){
 }
 
 function keepGoing(array, changeValue, skipValue){
-  for (var i = 0; i < array.length; i++) {
-    if (array[i]  === skipValue) {
+  for(let a = 0; a < array.length; a++) {
+    if (array[a]  === skipValue) {
       continue;
     }
-    array[i] = changeValue;
+    array[a] = changeValue;
   }
   return array;
 }
+
 function findBy(array, findFn) {
-  for (var i = 0; i < array.length; i++) {
-    if (findFn(array[i])) {
-      return array[i];
+  for (let a = 0; a < array.length; a++) {
+    if (findFn(array[a])) {
+      return array[a];
     }
   }
-return null;
-
+  return null;
 }
